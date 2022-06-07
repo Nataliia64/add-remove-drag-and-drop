@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>add-remove-drag-and-drop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <ul class="cell_captions">
+            <div class="remove_task invisible">
+                <p class="clickable">-</p>
+            </div>
+            <li class="cell_header">Planned
+            </li>
+            <li class="cell_header">In Progress 
+            </li>
+            <li class="cell_header">Finished
+            </li>
+        </ul>
+        <ul class="placeholder hide">
+            <li class="remove_task">
+                <p class="clickable">-</p>
+            </li>
+            <li class="cell js_cell">
+                <div class="card js_card" draggable="true">
+                    <form class="task_content" action="#" method="post" name="my_task">
+                        <input class="input" title="new_task" type="text" maxlength="50">
+                        <div class="save_task">Save Task</div>
+                    </form>
+                </div>
+            </li>
+            <li class="cell js_cell"></li>
+            <li class="cell js_cell"></li>
+        </ul>
+    </div>
+    <div class = "add_task">
+        <p class="clickable">+</p>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
